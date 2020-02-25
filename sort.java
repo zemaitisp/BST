@@ -16,7 +16,7 @@ class sort {
   }
 
   public void sort(node curr){
-    //would cause an error if not for shortcircuting 
+    //would cause an error if not for shortcircuting dont think I need the second conditional
     if(curr.getLeft() != null && !sorted.contains(curr.getLeft().getKey())) {
       sort(curr.getLeft());
     }
